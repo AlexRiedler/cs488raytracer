@@ -1,0 +1,12 @@
+Raytracer built for CS488 (Computer Graphics) at the University of Waterloo
+
+How to invoke my program: 
+
+    type ./rt <scene-file> [ num-threads ] at the command prompt from A4 folder
+    e.g. ./rt hier.lua 8
+
+Libraries Required: 
+
+    libpng
+    lua
+
