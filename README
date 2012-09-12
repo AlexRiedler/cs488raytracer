@@ -1,9 +1,15 @@
 Raytracer built for CS488 (Computer Graphics) at the University of Waterloo
 
+How to compile my program:
+
+    make
+
 How to invoke my program: 
 
-    type ./rt <scene-file> [ num-threads ] at the command prompt from A4 folder
+    ./rt <scene-file> [ num-threads ]
     e.g. ./rt hier.lua 8
+
+    make render # will render all samples
 
 Libraries Required: 
 

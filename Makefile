@@ -12,8 +12,8 @@ OBJECTS := $(patsubst %.cpp, $(BUILD_PATH)/%.o, $(SRC))
 DEP     := $(SOURCES:.cpp=.d)
 
 # Tools
-LDFLAGS := $(shell pkg-config --libs gtkmm-2.4 gtkglextmm-1.2 lua libpng)
-CPPFLAGS := $(shell pkg-config --cflags gtkmm-2.4 gtkglextmm-1.2 lua)
+LDFLAGS := $(shell pkg-config --libs lua libpng) -lpthread
+CPPFLAGS := $(shell pkg-config --cflags lua libpng)
 CXXFLAGS := $(CPPFLAGS) -W -Wall -g -Wno-unused-parameter -Wno-unused-variable -Wno-deprecated-declarations
 CXX = clang++
 
